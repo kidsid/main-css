@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/kidsid/main-css/issues"
   },
-  "homepage": "https://github.com/kidsid/main-css#readme"
+  "homepage": "https://github.com/kidsid/main-css#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
 }
