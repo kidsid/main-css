@@ -1,0 +1,39 @@
+$_margins:(
+    10: 10px,
+    20: 20px,
+    30: 30px,
+    40: 40px,
+    50: 50px,
+    60: 60px,
+    70: 70px,
+    80: 80px,
+    90: 90px,
+    100: 100px,
+);
+
+$_directions:(t, r, b, l);
+
+@each $direction in $_directions{
+  @each $key, $value in $_margins{
+    @if #{direction} == t{
+        .mt#{$key}{
+          margin-top: #{$value};
+      }
+    }
+    @if #{direction} == r{
+        .mr#{$key}{
+          margin-right: #{$value};
+      }
+    }
+    @if #{direction} == b{
+        .mb#{$key}{
+          margin-bottom: #{$value};
+      }
+    }
+    @if #{direction} == l{
+        .ml#{$key}{
+          margin-left: #{$value};
+      }
+    }
+  }
+}
