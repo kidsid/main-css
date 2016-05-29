@@ -11,26 +11,26 @@ $_paddings:(
     100: 100px,
 );
 
-$_directions:(t, r, b, l);
+$_directions:(top, right, bottom, left);
 
 @each $direction in $_directions{
   @each $key, $value in $_paddings{
-    @if #{direction} == t{
+    @if #{direction} == top{
         .pt#{$key}{
           padding-top: #{$value};
       }
     }
-    @if #{direction} == r{
+    @if #{direction} == right{
         .pr#{$key}{
           padding-right: #{$value};
       }
     }
-    @if #{direction} == b{
+    @if #{direction} == bottom{
         .pb#{$key}{
           padding-bottom: #{$value};
       }
     }
-    @if #{direction} == l{
+    @if #{direction} == left{
         .pl#{$key}{
           padding-left: #{$value};
       }

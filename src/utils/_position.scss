@@ -1,0 +1,24 @@
+$_positions: (relative, absolute, fixed, static);
+
+@each $position in $_positions{
+  @if $position == relative{
+    .pr{
+      position: relative;
+    }
+  }
+  @if $position == absolute{
+    .pa{
+      position: absolute;
+    }
+  }
+  @if $position == fixed{
+    .pf{
+      position: fixed;
+    }
+  }
+  @if $position == static{
+    .ps{
+      position: static;
+    }
+  }
+}
