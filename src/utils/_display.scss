@@ -1,0 +1,7 @@
+$_displays:(inline, block, flex, inline-block, inline-table, table, table-cell, table-row, none, inherit);
+
+@each $display in $_displays{
+  .d#{$display}{
+    display: $display;
+  }
+}
